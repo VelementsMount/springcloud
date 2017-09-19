@@ -1,4 +1,4 @@
 server:
   port: 9993
 profilename: test
-pass: {cipher}b407740e3248f78e21a830fbd083dfab92904ace3258c04f5007b13b3b6d44cd
+pass: '{cipher}b407740e3248f78e21a830fbd083dfab92904ace3258c04f5007b13b3b6d44cd'
