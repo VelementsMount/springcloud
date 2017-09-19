@@ -8,7 +8,22 @@ spring:
           uri: https://github.com/VelementsMount/springcloud.git
           username: VelementsMount
           password: lzl640,lzl640
+#          basedir: /tmp/config_repo
+#          cloneOnStart: true
+#          force-pull: true
           search-paths: configurations/{application}
 server:
   port: 8808
+encrypt:
+  key: liuzhilin
+management:
+  security:
+    enabled: false
+security:
+  basic:
+    enabled: true
+  user:
+    name: liuzhilin
+    password: liuzhilin
+
 

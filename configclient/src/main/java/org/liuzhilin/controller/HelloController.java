@@ -10,8 +10,11 @@ public class HelloController {
     @Value( "${profilename}" )
     private String profileName;
 
+    @Value( "${pass}" )
+    private String pass;
+
     @GetMapping("/")
     public String hello() {
-        return profileName;
+        return profileName+pass;
     }
 }

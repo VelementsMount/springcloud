@@ -3,7 +3,7 @@ spring:
     name: configclient
   cloud:
     config:
-      uri: http://localhost:8808
+      uri: http://liuzhilin:liuzhilin@localhost:8808
       profile: prod
       label: master
 server:
