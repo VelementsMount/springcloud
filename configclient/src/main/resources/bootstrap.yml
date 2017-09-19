@@ -3,9 +3,22 @@ spring:
     name: configclient
   cloud:
     config:
-      uri: http://liuzhilin:liuzhilin@localhost:8808
+      discovery:
+        enabled: true
+        service-id: config-server-git
+#      uri: http://liuzhilin:liuzhilin@localhost:8808
+      username: liuzhilin
+      password: liuzhilin
       profile: prod
       label: master
 server:
   port: 9990
+
+eureka:
+  instance:
+    hostname: peer2
+  client:
+    prefer-ip-address: true
+    serviceUrl:
+      defaultZone: http://peer1:8761/eureka/,http://peer2:8771/eureka/
 

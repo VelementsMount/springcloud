@@ -16,6 +16,12 @@ server:
   port: 8808
 encrypt:
   key: liuzhilin
+#encrypt:
+#  keyStore:
+#    location: classpath:/server.jks
+#    password: letmein
+#    alias: mytestkey
+#    secret: changeme
 management:
   security:
     enabled: false
@@ -25,5 +31,13 @@ security:
   user:
     name: liuzhilin
     password: liuzhilin
+
+eureka:
+  instance:
+    hostname: peer1
+  client:
+    prefer-ip-address: true
+    serviceUrl:
+      defaultZone: http://peer1:8761/eureka/,http://peer2:8771/eureka/
 
 
